@@ -1,0 +1,41 @@
+{
+  "name": "atom-build-plask",
+  "version": "1.0.0",
+  "description": "atom-build plugin that runs selected file in Plask",
+  "main": "lib/atom-build-plask.js",
+  "license": "MIT",
+  "author": {
+    "name": "Marcin Ignac",
+    "email": "marcin.ignac@gmail.com",
+    "url": "https://github.com/vorg"
+  },
+  "dependencies": {
+    "applescript": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "atom"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vorg/atom-build-plask.git"
+  },
+  "homepage": "https://github.com/vorg/atom-build-plask",
+  "bugs": {
+    "url": "https://github.com/vorg/atom-build-plask/issues"
+  },
+  "engines": {
+    "atom": ">1.0.0"
+  },
+  "providedServices": {
+    "builder": {
+      "description": "Runs js files in Plask",
+      "versions": {
+        "1.0.0": "provideBuilder"
+      }
+    }
+  }
+}
